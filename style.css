@@ -112,18 +112,17 @@ html, body{
     }
 
     .bgfirst{
-        background: linear-gradient(180deg, rgba(255, 0, 0, 0.39) 0%, #FFC8DD 0.02%, #A2D2FF 91.8%, #A2D2FF 125.5%);
+        background-color: linear-gradient(180deg, rgba(255, 0, 0, 0.39) 0%, #FFC8DD 0.02%, #A2D2FF 91.8%, #A2D2FF 125.5%);
         padding: 0;
         margin: 0;
         z-index: -1;
-        height: 100vh;
-        
+        height: 100%;        
     }
 
     #startText{
         position: relative;
-        font-size: 160px;
-        /*display: block;*/
+        font-size: 100px;
+        align-self: center;
     }
 
     .logo{
@@ -141,10 +140,7 @@ html, body{
         justify-content: flex-end;
     }
 
-    .abhi{
-        visibility: hidden;
-        position: absolute;
-        right: -100px;
+    .text2{
     }
 
     .abhi2{
@@ -241,21 +237,4 @@ ul{
     top: 1650px;
     right: 150px;
     transform: rotate(15deg);
-}
-
-/*---------------responsive second page------------------------*/
-@media only screen and (max-width: 600px) {
-    .upTriangle{
-        visibility: hidden;
-    }
-
-    .downTriangle{
-        visibility: hidden;
-    }
-
-}
-
-
-.SecondPage{
-    height:100%;
 }
