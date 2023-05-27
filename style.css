@@ -58,13 +58,15 @@ html, body{
 .text1{
     justify-content: center;
     align-self: center;
-    margin-bottom: 270px;
+    margin-top: 93px;
+    margin-bottom: 93px;
 }
 
 .text2{
     line-height: 0px;
     align-self: flex-end;
     margin: 60px;
+    margin-right: 0px;
 }
 
 .abhi{
@@ -225,45 +227,159 @@ ul{
 
 /*------------------------------Second Page----------------------------------*/
 .bgSecond{
-  height: 100vh;
-}
-
-.upTriangle{
-    position: absolute;
-    height: inherit;
-    width: inherit;
-    top: 975px;
-}
-
-
-.downTriangle{
-    position: absolute;
-    top: 1200px;
-    height: inherit;
-    width: inherit;
-    opacity: 0.5;
+  height: 156vh; 
+  background: linear-gradient(10deg, #2369A5 5%, #A2D2FF 61.49%);
 }
 
 .secondPageIntro{
-    position: absolute;
     font-family: monospace;
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
-    top: 990px;
-    right: 450px;
     line-height: 50px;
+    margin: 0px;
+    padding-top: 160px ;
+
+    /*text-shadow: -2px 2px 2px
+            rgb(255, 255, 255);
+    animation: change-color 5s ease-in-out infinite;
+    ---------Use javascript to highlight each word line by line giving it a 
+    ---------glow kinda effect---------------------------------------------*/
 }
+
+
+/*@keyframes change-color {
+    0% {
+        text-shadow: -2px 1px 0px
+            rgb(255, 132, 224);
+      }
+    50% {
+        text-shadow: -2px 1px 0px
+         rgb(17, 0, 255);
+      }
+    100% {
+        text-shadow: -2px 1px 0px
+        rgb(255, 132, 224);
+      }
+}*/
+
+
 
 .projectNB{
     position: absolute;
-    top: 1250px;
-    left: 150px;
+    top: 1410px;
+    left: 220px;
     transform: rotate(-15deg);
 }
 
-.aboutMeNM{
+.projectNBCursive{
     position: absolute;
-    top: 1650px;
-    right: 150px;
+    left: 170px;
+    top: 1297px;
+}
+
+.aboutMeNB{
+    position: absolute;
+    top: 1545px;
+    right: 220px;
     transform: rotate(15deg);
 }
+
+.aboutMeNBCursive{
+    position: absolute;
+    top: 1450px;
+    right: 170px;
+}
+
+.projectNB:hover{
+    animation: scaleRotate 1s  cubic-bezier(0.58, 1, 0.48, 1) 1;
+}
+
+.aboutMeNB:hover{
+    animation: scaleRotate2 1s  cubic-bezier(0.58, 1, 0.48, 1) 1;
+}
+
+@keyframes scaleRotate {
+    0% {
+        transform: scale(1) rotate(-15deg);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1) rotate(345deg);
+      }
+}
+
+@keyframes scaleRotate2 {
+    0% {
+        transform: scale(1) rotate(15deg);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1) rotate(-345deg);
+      }
+}
+
+/*----------------------------------SECOND PAGE END--------------------------------*/
+
+/*---------------------------------------FOOTER----------------------------------*/
+
+.bgThird{
+    /* Rectangle 19 */
+    width: 1920px;
+    height: 250px;
+
+    background: linear-gradient(3.15deg, #DE6B97 -0.34%, #2369A5 82.68%, #6491bb 123.56%);
+}
+
+.footerLogo{
+    position: absolute;
+    right: 30px;
+    margin: 75px;
+}
+
+.emailLogo{
+    position: absolute;
+    margin: 10px;
+    top: 2000px;
+    left: 93px;
+}
+
+.callLogo{
+    position: absolute;
+    margin: 20px;
+    top: 2050px;
+    left: 77px;
+}
+
+.instaLogo{
+    position: absolute;
+    margin: 20px;
+    top: 2108px;
+    left: 73px;
+}
+
+.icons{
+    position: absolute;
+    margin: 0px;
+    top: 2008px;
+    left: 73px;
+}
+
+.contacts a{
+    font-family: monospace;
+    color: black;
+    font-size: 20px;
+}
+
+.contacts{
+    position: absolute;
+    padding: 10px;
+    top: 1960px;
+    left: 116px;
+    line-height: 57px;
+}
+
+/*------------------FOOTER ENDS-----------------------------------
