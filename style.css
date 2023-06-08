@@ -294,15 +294,13 @@ ul{
 }
 
 @keyframes scaleRotate {
-    0% {
+    0%{
         transform: scale(1) rotate(-15deg);
       }
-      50% {
+    50%{
         transform: scale(1.2);
       }
-      100% {
-        transform: scale(1) rotate(345deg);
-      }
+      
 }
 
 @keyframes scaleRotate2 {
@@ -311,9 +309,6 @@ ul{
       }
       50% {
         transform: scale(1.2);
-      }
-      100% {
-        transform: scale(1) rotate(-345deg);
       }
 }
 
@@ -421,9 +416,32 @@ ul{
 /*--------------------------------Section Uno Fin-----------------------------------*/
 /*---------------------------------Section Dos-----------------------------------*/
 .aboutPg2{
-    height: 100vh;
+    height: 200vh;
     background: linear-gradient(10deg, #2369A5 2.78%, #A2D2FF 61.49%);
-
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    font-size: 21px;
+    line-height: 40px;
 }
+
+.introAboutMe{
+    z-index: 2;
+    margin-left: 120px;
+    margin-top: 200px;
+}
+
+.introAboutMe2{
+    margin-top: 120px;
+    margin-right: 120px;
+    align-self: flex-end;
+}
+
+.introAboutMe3{
+    margin-left: 120px;
+    margin-top: 200px;
+}
+
+
 /*-------------------------------Section Dos Fin-----------------------------------*/
 /*-----------------------------------ABOUT ENDS-----------------------------------*/
